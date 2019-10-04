@@ -178,12 +178,12 @@ function CreatePattern2() {
         canvas.remove(el)
       })
     } else {
-      drawGrid(20, 800)
+      drawGrid(20, 780)
     }
   }
 
   function initCanvas() {
-    drawGrid(20, 800)
+    drawGrid(20, 780)
 
     // ------- OBJECTS GENERATION HERE  -------
 
