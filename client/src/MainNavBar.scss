@@ -1,0 +1,64 @@
+.App-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  width: 15vw;
+  background: white;
+  text-align: center;
+  border: 1px solid rgb(223, 215, 215);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.App-header {
+  position: fixed;
+  bottom: 20px;
+  left: -12%;
+  transition: all 1s ease;
+  height: 100vh;
+}
+
+.App-header:hover {
+  left: 0px;
+}
+
+.App-header:hover {
+  animation: anima forwards;
+  animation-duration: 2s;
+}
+
+.insideNav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 140px;
+}
+
+:root {
+  --mainColor: white;
+  --halfmainColor: #8abdb4;
+}
+
+.navText {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  margin-left: 55px;
+  text-decoration: none;
+  color: rgb(0, 0, 53);
+  background: linear-gradient(
+    to bottom,
+    var(--mainColor) 75%,
+    var(--halfmainColor) 25%
+  );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  transition: background-size 0.3s;
+  width: 50%;
+  text-align: center;
+}
+
+.navText:hover {
+  background-size: 4px 50px;
+}

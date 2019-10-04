@@ -14,16 +14,16 @@ const bcryptSalt = 10
 
 require('../configs/database')
 
-let users = [
-  {
-    username: 'alice',
-    password: bcrypt.hashSync('alice', bcrypt.genSaltSync(bcryptSalt)),
-  },
-  {
-    username: 'bob',
-    password: bcrypt.hashSync('bob', bcrypt.genSaltSync(bcryptSalt)),
-  },
-]
+// let users = [
+//   {
+//     username: 'alice',
+//     password: bcrypt.hashSync('alice', bcrypt.genSaltSync(bcryptSalt)),
+//   },
+//   {
+//     username: 'bob',
+//     password: bcrypt.hashSync('bob', bcrypt.genSaltSync(bcryptSalt)),
+//   },
+// ]
 
 User.deleteMany()
   .then(() => {

@@ -1,0 +1,30 @@
+.Login {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 5px white;
+  border-style: double;
+  width: 20vw;
+  height: 40vh;
+  padding: 40px;
+  padding-top: 70px;
+}
+
+.loginTitle {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 3em;
+  margin-top: 0px;
+  color: rgb(2, 0, 65);
+}
+
+.input5 {
+  height: 30px;
+  border-radius: 5px;
+  color: #8abdb4;
+}
+
+.input6 {
+  height: 30px;
+  border-radius: 5px;
+  color: #8abdb4;
+}

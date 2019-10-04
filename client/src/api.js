@@ -68,36 +68,51 @@ export default {
 
   // This is an example on how to use this method in a different file
   // api.getCountries().then(countries => { /* ... */ })
-  getCountries() {
+  getMyPattern() {
     return service
-      .get('/countries')
+      .get('/my-pattern')
       .then(res => res.data)
       .catch(errHandler)
   },
 
-  addCountry(body) {
+  getLibrary() {
     return service
-      .post('/countries', body)
+      .get('/my-pattern')
       .then(res => res.data)
       .catch(errHandler)
   },
 
-  getSecret() {
+  postMyPattern(formdata) {
     return service
-      .get('/secret')
-      .then(res => res.data)
-      .catch(errHandler)
-  },
-
-  addPicture(file) {
-    const formData = new FormData()
-    formData.append('picture', file)
-    return service
-      .post('/endpoint/to/add/a/picture', formData, {
+      .post('/my-pattern', formdata, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
       })
+      .then(res => {
+        console.log(res.data)
+        return res.data
+      })
+      .catch(errHandler)
+  },
+
+  // postMyPattern(formdata) {
+  //   return service
+  //     .post('/library', formdata, {
+  //       headers: {
+  //         'Content-Type': 'multipart/form-data',
+  //       },
+  //     })
+  //     .then(res => {
+  //       console.log(res.data)
+  //       return res.data
+  //     })
+  //     .catch(errHandler)
+  // },
+
+  getAllMyPattern() {
+    return service
+      .get('/my-pattern')
       .then(res => res.data)
       .catch(errHandler)
   },

@@ -1,0 +1,225 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainHomeTitle {
+  color: rgb(2, 0, 65);
+  font-size: 5em;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+}
+
+.mainHomeTitle:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.hookUptext {
+  text-align: center;
+}
+
+.homeBtn1 {
+  border: 10px solid white;
+  border-style: double;
+  background: none;
+  font-size: 2em;
+  color: #ff7761;
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding: 50px;
+  outline: none;
+  width: 25vw;
+  /* Full width border and a clip-path visually cutting it down to the starting size */
+  clip-path: polygon(
+    calc(0% + 5px) calc(0% + 5px),
+    /* top left */ calc(100% - 5px) calc(0% + 5px),
+    /* top right */ calc(100% - 5px) calc(100% - 5px),
+    /* bottom right */ calc(0% + 5px) calc(100% - 5px) /* bottom left */
+  );
+  transition: clip-path 0.2s linear;
+}
+
+.homeBtn1:hover {
+  /* Clip-path spanning the entire box so it's no longer hiding the full-width border. */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.homeBtn2 {
+  border: 10px solid white;
+  border-style: double;
+  background: none;
+  font-size: 2em;
+  color: #ff7761;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 50px;
+  outline: none;
+  width: 25vw;
+  /* Full width border and a clip-path visually cutting it down to the starting size */
+  clip-path: polygon(
+    calc(0% + 5px) calc(0% + 5px),
+    /* top left */ calc(100% - 5px) calc(0% + 5px),
+    /* top right */ calc(100% - 5px) calc(100% - 5px),
+    /* bottom right */ calc(0% + 5px) calc(100% - 5px) /* bottom left */
+  );
+  transition: clip-path 0.2s linear;
+}
+
+.homeBtn2:hover {
+  /* Clip-path spanning the entire box so it's no longer hiding the full-width border. */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.homeBtn3 {
+  border: 10px solid white;
+  border-style: double;
+  background: none;
+  justify-content: space-around;
+  font-size: 2em;
+  color: #ff7761;
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding: 50px;
+  outline: none;
+  width: 25vw;
+  /* Full width border and a clip-path visually cutting it down to the starting size */
+  clip-path: polygon(
+    calc(0% + 5px) calc(0% + 5px),
+    /* top left */ calc(100% - 5px) calc(0% + 5px),
+    /* top right */ calc(100% - 5px) calc(100% - 5px),
+    /* bottom right */ calc(0% + 5px) calc(100% - 5px) /* bottom left */
+  );
+  transition: clip-path 0.2s linear;
+}
+
+.homeBtn3:hover {
+  /* Clip-path spanning the entire box so it's no longer hiding the full-width border. */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+#texte {
+  color: #8abdb4;
+  opacity: 0;
+  transition: opacity 0.7s linear;
+  font-family: 'Open Sans Condensed', sans-serif;
+  border-radius: 5px;
+  margin-left: 20px;
+  padding: 20px;
+}
+// #ff7761;
+#texte.is-active {
+  opacity: 1;
+  background: white;
+  font-size: 1.1em;
+  color: #8abdb4;
+  font-family: 'Open Sans Condensed', sans-serif;
+  border-radius: 5px;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+#texte2 {
+  color: #8abdb4;
+  opacity: 0;
+  transition: opacity 0.7s linear;
+  font-family: 'Open Sans Condensed', sans-serif;
+  border-radius: 5px;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+#texte2.is-active {
+  opacity: 1;
+  background: white;
+  font-size: 1.1em;
+  color: #8abdb4;
+  font-family: 'Open Sans Condensed', sans-serif;
+  border-radius: 5px;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+#texte3 {
+  color: #8abdb4;
+  opacity: 0;
+  transition: opacity 0.4s linear;
+  font-family: 'Open Sans Condensed', sans-serif;
+  border-radius: 5px;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+#texte3.is-active {
+  opacity: 1;
+  background: white;
+  // font-size: 1.1em;#ff7761
+  color: #8abdb4;
+  font-family: 'Open Sans Condensed', sans-serif;
+  border-radius: 5px;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.parentHomeContainer {
+  display: flex;
+  justify-content: center;
+  // margin-left: 300px;
+}
+
+.fondDeText {
+  width: 400px;
+  height: 90px;
+  text-align: justify;
+}
+
+.fondDeText3 {
+  width: 400px;
+  height: 90px;
+  text-align: center;
+}
+
+.questionReponse {
+  display: flex;
+  align-items: center;
+}
+
+.hereLink {
+  text-decoration: none;
+  color: #8abdb4;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.hereLink:hover {
+  text-decoration: underline;
+  color: #5a7e78;
+}

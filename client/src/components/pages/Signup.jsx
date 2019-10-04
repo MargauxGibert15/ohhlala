@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import api from '../../api'
+import './SignUp.scss'
 
 export default function Signup(props) {
   const [state, setState] = useState({
@@ -32,36 +33,59 @@ export default function Signup(props) {
       .catch(err => setState({ message: err.toString() }))
   }
   return (
-    <div className="Signup">
-      <h2>Signup</h2>
-      <form>
-        Username:{' '}
-        <input
-          type="text"
-          value={state.username}
-          name="username"
-          onChange={handleInputChange}
-        />{' '}
-        <br />
-        Name:{' '}
-        <input
-          type="text"
-          value={state.name}
-          name="name"
-          onChange={handleInputChange}
-        />{' '}
-        <br />
-        Password:{' '}
-        <input
-          type="password"
-          value={state.password}
-          name="password"
-          onChange={handleInputChange}
-        />{' '}
-        <br />
-        <button onClick={e => handleClick(e)}>Signup</button>
-      </form>
-      {state.message && <div className="info info-danger">{state.message}</div>}
+    <div className="signUpChild">
+      <div className="Signup">
+        <h2 className="signUpTitle">
+          {' '}
+          <span>
+            <span>S</span>
+            <span>i</span>
+            <span>g</span>
+            <span>n</span>
+            <span className="colorSignup">U</span>
+            <span className="colorSignup">p</span>
+          </span>
+        </h2>
+        <form className="allInput">
+          {' '}
+          <input
+            placeholder="Username"
+            type="text"
+            value={state.username}
+            name="username"
+            onChange={handleInputChange}
+            id="inputencore"
+            className="input1"
+          />{' '}
+          <br />{' '}
+          <input
+            placeholder="Name"
+            type="text"
+            value={state.name}
+            name="name"
+            onChange={handleInputChange}
+            id="inputencore"
+            className="input2"
+          />{' '}
+          <br />{' '}
+          <input
+            placeholder="Password"
+            type="password"
+            value={state.password}
+            name="password"
+            onChange={handleInputChange}
+            id="inputencore"
+            className="input3"
+          />{' '}
+          <br />
+          <button onClick={e => handleClick(e)} className="signUpBtn">
+            Signup
+          </button>
+        </form>
+        {state.message && (
+          <div className="info info-danger">{state.message}</div>
+        )}
+      </div>
     </div>
   )
 }

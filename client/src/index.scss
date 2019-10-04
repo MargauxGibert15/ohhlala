@@ -1,6 +1,5 @@
 // --------------------
 // Definition of variables
-$primary: #32c3ff;
 
 // ----------------------------------------
 // To install Boostrap:
@@ -20,63 +19,49 @@ $primary: #32c3ff;
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-}
-
-.info {
-  margin: 20px;
-  padding: 10px 20px;
-  border-radius: 10px;
-  display: inline-block;
-  background-color: #5776e9;
-  color: white;
-}
-
-.info.info-danger {
-  background-color: #e73f3f;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-image: url('./imageBackground.png');
 }
 
 // --------------------
 // Style for App component
 .App {
-  text-align: center;
-
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 80px;
-  }
-
   .App-header {
-    background-color: $primary;
-    padding: 20px;
-    color: white;
-
-    a {
-      color: white;
-      padding: 0 5px;
-      text-decoration: unset;
-    }
-
-    a.active {
-      font-weight: bold;
-    }
+    color: rgb(2, 0, 65);
   }
 
   .App-title {
-    font-size: 1.5em;
+    font-size: 4em;
+    font-family: 'Amatic SC', cursive;
   }
 
-  .App-intro {
-    font-size: large;
+  .App-title:hover {
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
   }
 
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
     }
 
-    to {
-      transform: rotate(360deg);
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
     }
   }
 }
@@ -94,6 +79,5 @@ body {
 .Secret {
   .result {
     font-size: 1.2em;
-    color: $primary;
   }
 }

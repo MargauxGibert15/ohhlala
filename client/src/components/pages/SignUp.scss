@@ -1,0 +1,166 @@
+.Signup {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 5px white;
+  border-style: double;
+  width: 20vw;
+  height: 40vh;
+  padding: 40px;
+  padding-top: 70px;
+}
+
+.signUpChild {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signUpTitle {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 3em;
+  margin-top: 0px;
+  color: rgb(2, 0, 65);
+}
+
+.colorSignup {
+  color: #ff7761;
+}
+
+#inputencore {
+  outline: none;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input1 {
+  height: 30px;
+  border-radius: 5px;
+  color: #8abdb4;
+}
+
+.input2 {
+  height: 30px;
+  border-radius: 5px;
+  color: #8abdb4;
+}
+
+.input3 {
+  height: 30px;
+  border-radius: 5px;
+  color: #8abdb4;
+}
+
+.signUpBtn {
+  width: 5vw;
+  height: 4vh;
+  margin-top: 10px;
+  color: black;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  background: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.signUpBtn:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  color: #ff7761;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+/* Place Holder CSS */
+::-webkit-input-placeholder {
+  color: #8abdb4;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:-moz-placeholder {
+  color: #8abdb4;
+  opacity: 0.5;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+::-moz-placeholder {
+  color: #8abdb4;
+  opacity: 0.5;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:-ms-input-placeholder {
+  color: white;
+  opacity: 0.5;
+  -ms-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+/* Place Holder CSS for Focus */
+:hover::-webkit-input-placeholder {
+  opacity: 0.75;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:hover:-moz-placeholder {
+  opacity: 0.75;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:hover::-moz-placeholder {
+  opacity: 0.75;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:hover:-ms-input-placeholder {
+  opacity: 0.75;
+  -ms-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+/* Place Holder CSS for Focus */
+:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:focus:-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:focus::-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:focus:-ms-input-placeholder {
+  opacity: 0;
+  -ms-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}

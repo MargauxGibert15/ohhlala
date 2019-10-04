@@ -38,6 +38,7 @@ router.post('/signup', (req, res, next) => {
 })
 
 router.post('/login', (req, res, next) => {
+  console.log(req.body)
   const { username, password } = req.body
 
   // first check to see if there's a document with that username
