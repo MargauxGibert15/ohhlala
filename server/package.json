@@ -15,6 +15,7 @@
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "express-session": "^1.15.6",
+    "fabric": "^3.4.0",
     "mongoose": "^5.4.15",
     "morgan": "^1.9.1",
     "nocache": "^2.0.0",
